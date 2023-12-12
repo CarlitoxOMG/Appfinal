@@ -1,0 +1,126 @@
+.logo {
+  width: 80%; /* Define el ancho de tu logo según tus necesidades */
+  height: 200px; /* Define la altura de tu logo según tus necesidades */
+  display: block; /* Esto ayuda a centrar la imagen horizontalmente */
+  margin: 0 auto; /* Esto también ayuda a centrar la imagen horizontalmente */
+}
+
+
+/* Estilo para el mensaje de error */
+.error-message {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilo para el botón de volver */
+.back-button {
+  margin-top: 20px;
+  text-align: center;
+  color: #3880ff;
+  cursor: pointer;
+}
+ion-card {
+  margin: 10px;
+}
+
+.title-container.animate-moveIn {
+  font-size: 25px;
+  animation: moveIn 4s infinite linear; /* Animación constante y lineal */
+}
+
+/* Definición de la animación */
+@keyframes moveIn {
+  0% {
+    transform: translateX(-10px); /* Mover hacia la izquierda */
+  }
+  50% {
+    transform: translateX(10px); /* Mover hacia la derecha */
+  }
+  100% {
+    transform: translateX(-10px); /* Volver a la izquierda */
+  }
+}
+
+
+.title-container {
+  margin-bottom: 20px; /* Espacio entre el título y el formulario */
+  border: 1px solid #ccc; /* Borde del contenedor del título */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno del contenedor del título */
+  max-width: 80%; /* Ancho máximo del contenedor del título */
+  margin: 0 auto; /* Centrar horizontalmente el contenedor del título */
+}
+
+.animate-moveIn {
+  animation: moveIn 1s ease forwards;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.custom-input {
+  margin: 10px 0;
+  border: 1px solid rgb(9, 175, 226);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.custom-button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.custom-link {
+  color: #007bff;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 80%; /* Define el ancho de tu logo según tus necesidades */
+  height: 200px; /* Define la altura de tu logo según tus necesidades */
+  display: block; /* Esto ayuda a centrar la imagen horizontalmente */
+  margin: 0 auto; /* Esto también ayuda a centrar la imagen horizontalmente */
+}
+
+
+
+ion-content {
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-end: 20px;
+  --padding-start: 20px;
+  
+  --background: url('https://scontent.fscl7-1.fna.fbcdn.net/v/t31.18172-8/12484846_851376694971447_1190501401858080487_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=300f58&_nc_ohc=rgXiwb_X3G0AX-d0vjb&_nc_ht=scontent.fscl7-1.fna&oh=00_AfA8HQSekmaNlKDQZNIeHTO8oNON__JPejBbDHXwpgwPiQ&oe=656C29E4') no-repeat center center fixed;
+  --background-size: 100% 100%;
+  --position: absolute;
+  --top: 0;
+  --left: 0;
+  --width: 100%;
+  --height: 100vh;
+  --z-index: -1;
+}
+  
+
+ion-item {
+  --padding-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees agregar */
+}
+
+
+
+

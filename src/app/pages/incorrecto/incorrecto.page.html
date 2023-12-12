@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <!-- Agrega el logo arriba del encabezado -->
+  <marquee direction="right" behavior="scroll" scrollamount="30">
+    <ion-img src="assets/logo-duoc.svg.png" class="logo"></ion-img>
+</marquee>
+<ion-toolbar>
+  <ion-title class="ion-text-center title-container animate-moveIn">Pregunta Secreta</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal content-container">
+  <ion-title class="ion-padding-top">
+    <ion-label class="sistema-title">
+    </ion-label>
+
+    <ion-card class="image-card">
+      <ion-card-header>
+        <ion-card-title>  <h1 class="ion-text-center">Sistema de asistencia DUOC UC!</h1></ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        <img [src]="'/assets/incorrecta_2.jpeg'" class="image-fit">
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="full" fill="clear" class="custom-link animated" (click)="login()">
+     Iniciar Sessión
+    </ion-button>
+  </ion-title>
+</ion-content>
+
+<!-- Termina el Content -->

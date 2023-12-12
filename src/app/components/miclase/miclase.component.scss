@@ -1,0 +1,41 @@
+/* Estilos generales */
+.marco {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el grid */
+.styled-grid {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos para las filas */
+.styled-row {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las columnas */
+.styled-col {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para el título */
+.title {
+  font-weight: bold;
+  background-color: #36424f;
+  color: #fff;
+}
+
+/* Estilos para los números */
+.number {
+  font-size: 1.2em;
+  color: #20c997;
+}

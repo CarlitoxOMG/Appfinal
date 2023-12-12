@@ -1,0 +1,34 @@
+<ion-header [translucent]="true" class="custom-header">
+  <ion-toolbar>
+    <ion-title class="custom-title">
+      <ion-img src="assets/logo-duoc.svg.png" class="logo custom-logo"></ion-img>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarSesion()" class="custom-button custom-cerrar-sesion">Cerrar Sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="custom-segment-toolbar">
+    <ion-segment [(ngModel)]="componente_actual" (ngModelChange)="cambiarComponente($event)" class="custom-segment">
+      <ion-segment-button value="qr" class="custom-segment-button">
+        <ion-img src="assets/qr_2.svg" style="width: 45px; height: 45px;"></ion-img>
+      </ion-segment-button>
+      <ion-segment-button value="miclase" class="custom-segment-button">
+        <ion-img src="assets/miclase.svg" style="width: 45px; height: 45px;"></ion-img>
+      </ion-segment-button>
+      <ion-segment-button value="foro" class="custom-segment-button">
+        <ion-img src="assets/foro.svg" style="width: 45px; height: 45px;"></ion-img>
+      </ion-segment-button>
+      <ion-segment-button value="misdatos" class="custom-segment-button">
+        <ion-img src="assets/misdatos_2.svg" style="width: 45px; height: 45px;"></ion-img>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="custom-content">
+  <app-qr [hidden]="componente_actual !== 'qr'" (qrCapturado)="cambiarComponente('miclase')"></app-qr>
+  <app-miclase [hidden]="componente_actual !== 'miclase'"></app-miclase>
+  <app-foro [hidden]="componente_actual !== 'foro'"></app-foro>
+  <app-misdatos [hidden]="componente_actual !== 'misdatos'"></app-misdatos>
+</ion-content>

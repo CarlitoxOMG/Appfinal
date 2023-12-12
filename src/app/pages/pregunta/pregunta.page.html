@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <!-- Agrega el logo arriba del encabezado -->
+  <marquee direction="right" behavior="scroll" scrollamount="30">
+    <ion-img src="assets/logo-duoc.svg.png" class="logo"></ion-img>
+</marquee>
+<ion-toolbar>
+  <ion-title class="ion-text-center title-container animate-moveIn">Recuperar Contraseña</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding content-container">
+  <ion-item class="animated">
+
+    <ion-label position="stacked">
+      Paso 2: Responde la Pregunta Secreta
+    </ion-label>
+
+  
+
+    <ion-input type="text" [ngModel]="preguntaSecreta" readonly></ion-input>
+  </ion-item>
+
+  <ion-item class="animated">
+    <ion-label position="stacked">Respuesta</ion-label>
+    <ion-input type="text" [(ngModel)]="respuesta"></ion-input>
+  </ion-item>
+
+  <!-- Mostrar el mensaje de error si errorMessage no está vacío -->
+  <ion-label color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-label>
+
+  <ion-button expand="full" class="animated" (click)="validarRespuesta()">Recuperar Contraseña</ion-button>
+</ion-content>

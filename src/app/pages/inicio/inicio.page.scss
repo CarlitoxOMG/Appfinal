@@ -1,0 +1,157 @@
+/* Estilos generales para el encabezado */
+.custom-header {
+  background-color: #007aff;
+  animation: headerAnimation 0.5s ease infinite alternate;
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+ion-content {
+  --background: url('https://scontent.fscl7-1.fna.fbcdn.net/v/t31.18172-8/12484846_851376694971447_1190501401858080487_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=300f58&_nc_ohc=rgXiwb_X3G0AX-d0vjb&_nc_ht=scontent.fscl7-1.fna&oh=00_AfA8HQSekmaNlKDQZNIeHTO8oNON__JPejBbDHXwpgwPiQ&oe=656C29E4') no-repeat center center fixed;
+  --background-size: 100% 100%;
+  --position: absolute;
+  --left: 0;
+  --width: 100%;
+  --height: 100vh;
+  --z-index: -1;
+  --margin-top: 100px; /* Ajusta el valor para mover la imagen hacia abajo */
+}
+
+/* Estilos para el título */
+.custom-content {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.custom-logo {
+  max-width: 150px; /* Ajusta el tamaño máximo de tu logotipo */
+  max-height: 150px; /* Ajusta el tamaño máximo de tu logotipo */
+}
+
+/* Estilos para el título con movimiento */
+.custom-title {
+  color: #000000;
+  font-size: 2px;
+  animation: titleAnimation 2s ease infinite alternate;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+/* Estilos para los botones en el encabezado */
+.custom-button {
+  color: #000000;
+  animation: buttonAnimation 1s ease infinite alternate;
+}
+
+.custom-cerrar-sesion {
+  background-color: #339cff; /* Cambia el color de fondo según tus preferencias */
+  color: white; /* Cambia el color del texto según tus preferencias */
+  border: none;
+  padding: 5px 10px; /* Ajusta el espaciado interior según tus preferencias */
+  font-weight: bold;
+  font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+.custom-cerrar-sesion:hover {
+  background-color: #000000; /* Cambia el color de fondo al pasar el mouse por encima */
+  /* Puedes agregar más estilos de interacción al pasar el mouse si lo deseas */
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+/* Estilos para el segmento */
+.custom-segment-toolbar {
+  animation: toolbarAnimation 0.9s ease infinite alternate;
+}
+
+@keyframes toolbarAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+.custom-segment-button {
+  color: #007aff;
+  font-size: 16px;
+  transition: background-color 0.00001s;
+  animation: segmentButtonAnimation 1s ease infinite alternate;
+}
+
+@keyframes segmentButtonAnimation {
+  0% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(1px);
+  }
+}
+
+/* Estilos para el contenido */
+.custom-content {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.custom-content:hover {
+  animation: contentAnimation 1s ease infinite alternate;
+}
+
+@keyframes contentAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para las imágenes en los botones */
+.icon-image {
+  max-width: 50px; /* Ajusta el tamaño máximo de las imágenes */
+  max-height: 50px; /* Ajusta el tamaño máximo de las imágenes */
+}
+
+/* Estilo para los segmentos */
+.custom-segment-toolbar {
+  --background: #000000; /* Color de fondo de la barra de segmentos */
+}
+
+.custom-segment-button {
+  --color-selected: #007aff; /* Color de texto cuando está seleccionado */
+  --color: #ffffff; /* Color de texto cuando no está seleccionado */
+  --background-selected: transparent; /* Fondo transparente cuando está seleccionado */
+  --background: transparent; /* Fondo transparente cuando no está seleccionado */
+  --border: none; /* Borde sin color */
+  --padding: 0; /* Elimina el relleno para un aspecto más limpio */
+  --width: 25%; /* Ancho de cada botón de segmento (ajusta según tus necesidades) */
+}
+
+/* Estilo para los iconos dentro de los segmentos */
+.icon-image {
+  --font-size: 24px; /* Tamaño del icono */
+  --margin-bottom: 6px; /* Ajusta el espacio entre el icono y el texto (ajusta según tus necesidades) */
+}

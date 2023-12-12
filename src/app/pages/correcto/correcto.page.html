@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <!-- Agrega el logo arriba del encabezado -->
+  <marquee direction="right" behavior="scroll" scrollamount="30">
+    <ion-img src="assets/logo-duoc.svg.png" class="logo"></ion-img>
+</marquee>
+<ion-toolbar>
+  <ion-title class="ion-text-center title-container animate-moveIn">Respuesta Correcta</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<!-- Comienza el Content -->
+<ion-content [fullscreen]="true" class="ion-padding-horizontal">
+  <!-- <mat-slider min="1" max="100" step="1" value="10"></mat-slider> -->
+  <ion-title class="ion-padding-top">
+    <ion-label>
+
+      <ion-card>
+        <ion-card-header>
+        </ion-card-header>
+        <div class="ion-text-center">
+          <h1>Tu Contraseña Es: {{ contrasena }}</h1>
+          <img [src]="'/assets/correcta_2.jpeg'" class="image-fit">
+      </div>
+      </ion-card>
+
+
+        <ion-label>
+          <br>
+          <div class="ion-text-center">
+            <ion-button expand="full" fill="clear" class="custom-link" (click)="login()">
+              Iniciar Sessión
+            </ion-button>
+          </div>
+        </ion-label>
+    </ion-label>
+  </ion-title>
+
+
+
+
+<!-- Termina el Content -->
+

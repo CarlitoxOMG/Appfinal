@@ -1,0 +1,58 @@
+<div class="marco">
+  <ion-grid class="styled-grid">
+    
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Bloque de inicio</ion-col>
+      <ion-col size="6" class="styled-col">
+        <span *ngIf="asistencia.bloqueInicio > 0" class="styled-span number">
+          {{ asistencia.bloqueInicio }}
+        </span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Bloque de término</ion-col>
+      <ion-col size="6" class="styled-col">
+        <span *ngIf="asistencia.bloqueTermino > 0" class="styled-span number">
+          {{ asistencia.bloqueTermino }}
+        </span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Día</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.dia }}</ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Hora de inicio</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.horaInicio }}</ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Hora de término</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.horaFin }}</ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Sigla de asignatura</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.idAsignatura }}</ion-col>
+    </ion-row>
+    
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Nombre del profesor</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.nombreProfesor }}</ion-col>
+    </ion-row>
+
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Sección</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.seccion }}</ion-col>
+    </ion-row>
+    
+    <ion-row class="styled-row">
+      <ion-col size="6" class="styled-col title">Sede</ion-col>
+      <ion-col size="6" class="styled-col">{{ asistencia.sede }}</ion-col>
+    </ion-row>
+
+  </ion-grid>
+</div>
